@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/openMenu"
+        style="@style/openMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openMenu"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ctitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_x="0dp"
+                    android:layout_y="229dp"
+                    android:gravity="center"
+                    android:text="@string/console3000"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/cimage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="229dp"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginTop="143dp"
+                    android:layout_marginEnd="93dp"
+                    android:layout_x="0dp"
+                    android:layout_y="0dp"
+                    android:contentDescription="@string/product_of_the_day_image"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <TextView
+                    android:id="@+id/cprice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="260dp"
+                    android:layout_y="229dp"
+                    android:text="@string/podprice"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/cdesc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="136dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="0dp"
+                    android:layout_y="269dp"
+                    android:text="@string/ipdesc"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/cbutton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_x="191dp"
+                    android:layout_y="405dp"
+                    android:backgroundTint="@color/popocvet"
+                    android:text="@string/buy" />
+            </AbsoluteLayout>
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ctitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_x="0dp"
+                    android:layout_y="229dp"
+                    android:gravity="center"
+                    android:text="@string/podtitle"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/cimage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="229dp"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginTop="143dp"
+                    android:layout_marginEnd="93dp"
+                    android:layout_x="0dp"
+                    android:layout_y="0dp"
+                    android:contentDescription="@string/product_of_the_day_image"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <TextView
+                    android:id="@+id/cprice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="260dp"
+                    android:layout_y="229dp"
+                    android:text="@string/podprice"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/cdesc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="136dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="0dp"
+                    android:layout_y="269dp"
+                    android:text="@string/ipdesc"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/cbutton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_x="191dp"
+                    android:layout_y="405dp"
+                    android:backgroundTint="@color/popocvet"
+                    android:text="@string/buy" />
+            </AbsoluteLayout>
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ctitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_x="0dp"
+                    android:layout_y="229dp"
+                    android:gravity="center"
+                    android:text="@string/podtitle"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/cimage3"
+                    android:layout_width="match_parent"
+                    android:layout_height="229dp"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginTop="143dp"
+                    android:layout_marginEnd="93dp"
+                    android:layout_x="0dp"
+                    android:layout_y="0dp"
+                    android:contentDescription="@string/product_of_the_day_image"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <TextView
+                    android:id="@+id/cprice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="260dp"
+                    android:layout_y="229dp"
+                    android:text="@string/podprice"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/cdesc3"
+                    android:layout_width="match_parent"
+                    android:layout_height="136dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="0dp"
+                    android:layout_y="269dp"
+                    android:text="@string/ipdesc"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/cbutton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_x="191dp"
+                    android:layout_y="405dp"
+                    android:backgroundTint="@color/popocvet"
+                    android:text="@string/buy" />
+            </AbsoluteLayout>
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ctitle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_x="0dp"
+                    android:layout_y="229dp"
+                    android:gravity="center"
+                    android:text="@string/podtitle"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/cimage4"
+                    android:layout_width="match_parent"
+                    android:layout_height="229dp"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginTop="143dp"
+                    android:layout_marginEnd="93dp"
+                    android:layout_x="0dp"
+                    android:layout_y="0dp"
+                    android:contentDescription="@string/product_of_the_day_image"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <TextView
+                    android:id="@+id/crice4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="260dp"
+                    android:layout_y="229dp"
+                    android:text="@string/podprice"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/cdesc4"
+                    android:layout_width="match_parent"
+                    android:layout_height="136dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="0dp"
+                    android:layout_y="269dp"
+                    android:text="@string/ipdesc"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/cbutton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_x="191dp"
+                    android:layout_y="405dp"
+                    android:backgroundTint="@color/popocvet"
+                    android:text="@string/buy" />
+            </AbsoluteLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">eShop</string>
+    <string name="podtitle">Laptop3000</string>
+    <string name="podprice">300$</string>
+    <string name="ipdesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="buy">Add to cart</string>
+    <string name="product_of_the_day_image">Product of the day image</string>
+    <string name="product_of_the_day">Product of the day</string>
+    <string name="open_menu">open menu</string>
+    <string name="laptops">Laptops</string>
+    <string name="consoles">Consoles</string>
+    <string name="phones">Phones</string>
+    <string name="console3000">Console3000</string>
+    <string name="phone3000">Phone3000</string>
+    <string name="laptop3000">Laptop3000</string>
+    <string name="eshop">eShop</string>
+</resources>
