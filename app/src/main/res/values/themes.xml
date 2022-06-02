@@ -15,5 +15,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="android:actionMenuTextColor">@color/black</item>
     </style>
 </resources>
