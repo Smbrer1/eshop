@@ -9,9 +9,9 @@ import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
 
 
     @Override
@@ -19,13 +19,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
-        Handler handler=new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(MainActivity.this, HomeActivity.class));
-                finish();
-            }
-        },1000);//5000
+        Handler handler = new Handler();
+        handler.postDelayed(() -> {
+            startActivity(new Intent(MainActivity.this, HomeActivity.class));
+            finish();
+        }, 1000);//5000
     }
+
 }

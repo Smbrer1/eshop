@@ -1,33 +1,35 @@
 package com.example.eshop;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.toptoolbar, menu);
         return true;
 
     }
+
+    @SuppressLint("NonConstantResourceId")
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item){
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
 
-        switch (item.getItemId())
-        {
+        switch (item.getItemId()) {
             case R.id.cart:
                 Intent intent_cart = new Intent(getApplicationContext(), Cart.class);
                 startActivity(intent_cart);
@@ -48,10 +50,19 @@ public class HomeActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void addToCartMenu(){
+        TextView name = findViewById(R.id.podname);
+        TextView price = findViewById(R.id.podprice);
+        String strName = name.getText().toString();
+        String strPrice = price.getText().toString();
+        Cart.addToCart(strName,strPrice);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setSupportActionBar(findViewById(R.id.openMenu));
+        final Button addToCartButton = findViewById(R.id.addToCartButton);
+        addToCartButton.setOnClickListener(v -> addToCartMenu());
     }
 }

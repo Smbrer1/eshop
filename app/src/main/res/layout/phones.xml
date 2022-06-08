@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Phones">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/openMenu"
@@ -77,7 +78,7 @@
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/pbutton1"
+                    android:id="@+id/b1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="232dp"
@@ -85,7 +86,8 @@
                     android:layout_x="191dp"
                     android:layout_y="405dp"
                     android:backgroundTint="@color/popocvet"
-                    android:text="@string/buy" />
+                    android:text="@string/buy"
+                    android:onClick="addToCartPhones"/>
             </AbsoluteLayout>
             <AbsoluteLayout
                 android:layout_width="match_parent"
@@ -100,7 +102,7 @@
                     android:layout_x="0dp"
                     android:layout_y="229dp"
                     android:gravity="center"
-                    android:text="@string/podtitle"
+                    android:text="@string/phone2000"
                     android:textSize="30sp" />
 
                 <ImageView
@@ -123,7 +125,7 @@
                     android:layout_marginEnd="44dp"
                     android:layout_x="260dp"
                     android:layout_y="229dp"
-                    android:text="@string/podprice"
+                    android:text="@string/_200"
                     android:textSize="30sp" />
 
                 <TextView
@@ -139,7 +141,7 @@
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/pbutton2"
+                    android:id="@+id/b2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="232dp"
@@ -147,7 +149,8 @@
                     android:layout_x="191dp"
                     android:layout_y="405dp"
                     android:backgroundTint="@color/popocvet"
-                    android:text="@string/buy" />
+                    android:text="@string/buy"
+                    android:onClick="addToCartPhones"/>
             </AbsoluteLayout>
             <AbsoluteLayout
                 android:layout_width="match_parent"
@@ -162,7 +165,7 @@
                     android:layout_x="0dp"
                     android:layout_y="229dp"
                     android:gravity="center"
-                    android:text="@string/podtitle"
+                    android:text="@string/phone1000"
                     android:textSize="30sp" />
 
                 <ImageView
@@ -185,7 +188,7 @@
                     android:layout_marginEnd="44dp"
                     android:layout_x="260dp"
                     android:layout_y="229dp"
-                    android:text="@string/podprice"
+                    android:text="@string/_100"
                     android:textSize="30sp" />
 
                 <TextView
@@ -201,7 +204,7 @@
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/pbutton3"
+                    android:id="@+id/b3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="232dp"
@@ -209,69 +212,8 @@
                     android:layout_x="191dp"
                     android:layout_y="405dp"
                     android:backgroundTint="@color/popocvet"
-                    android:text="@string/buy" />
-            </AbsoluteLayout>
-            <AbsoluteLayout
-                android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/ptitle4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="45dp"
-                    android:layout_x="0dp"
-                    android:layout_y="229dp"
-                    android:gravity="center"
-                    android:text="@string/podtitle"
-                    android:textSize="30sp" />
-
-                <ImageView
-                    android:id="@+id/pimage4"
-                    android:layout_width="match_parent"
-                    android:layout_height="229dp"
-                    android:layout_marginStart="92dp"
-                    android:layout_marginTop="143dp"
-                    android:layout_marginEnd="93dp"
-                    android:layout_x="0dp"
-                    android:layout_y="0dp"
-                    android:contentDescription="@string/product_of_the_day_image"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
-                <TextView
-                    android:id="@+id/price4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="44dp"
-                    android:layout_marginEnd="44dp"
-                    android:layout_x="260dp"
-                    android:layout_y="229dp"
-                    android:text="@string/podprice"
-                    android:textSize="30sp" />
-
-                <TextView
-                    android:id="@+id/pdesc4"
-                    android:layout_width="match_parent"
-                    android:layout_height="136dp"
-                    android:layout_marginStart="43dp"
-                    android:layout_marginTop="95dp"
-                    android:layout_marginEnd="44dp"
-                    android:layout_x="0dp"
-                    android:layout_y="269dp"
-                    android:text="@string/ipdesc"
-                    android:textSize="20sp" />
-
-                <Button
-                    android:id="@+id/pbutton4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="232dp"
-                    android:layout_marginTop="230dp"
-                    android:layout_x="191dp"
-                    android:layout_y="405dp"
-                    android:backgroundTint="@color/popocvet"
-                    android:text="@string/buy" />
+                    android:text="@string/buy"
+                    android:onClick="addToCartPhones"/>
             </AbsoluteLayout>
         </LinearLayout>
 

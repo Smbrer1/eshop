@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".HomeActivity">
     <androidx.appcompat.widget.Toolbar
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -12,7 +12,7 @@
         style="@style/openMenu"
         />
     <TextView
-        android:id="@+id/podtitle"
+        android:id="@+id/podname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/podimage" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/addToCartButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="232dp"
@@ -71,7 +71,7 @@
         android:text="@string/buy"
         android:backgroundTint="@color/popocvet"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/podimage" />
+        app:layout_constraintTop_toBottomOf="@+id/podimage"/>
 
     <TextView
         android:textSize="30sp"

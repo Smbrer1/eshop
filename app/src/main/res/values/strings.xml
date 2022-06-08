@@ -14,4 +14,16 @@
     <string name="phone3000">Phone3000</string>
     <string name="laptop3000">Laptop3000</string>
     <string name="eshop">eShop</string>
+    <string name="console2000">Console2000</string>
+    <string name="_200">200$</string>
+    <string name="console1000">Console1000</string>
+    <string name="_100">100$</string>
+    <string name="console">Console</string>
+    <string name="_50">50$</string>
+    <string name="laptop2000">Laptop2000</string>
+    <string name="laptop1000">Laptop1000</string>
+    <string name="laptop">Laptop</string>
+    <string name="phone2000">Phone2000</string>
+    <string name="phone1000">Phone1000</string>
+    <string name="phone">Phone</string>
 </resources>
