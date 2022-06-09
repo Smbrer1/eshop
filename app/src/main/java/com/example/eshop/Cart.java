@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -14,12 +15,23 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 
 
 public class Cart extends AppCompatActivity {
+
+    public void buy(View view) {
+        Snackbar mySnackbar = Snackbar.make(view, "Our manager will contact you soon", 10000);
+        mySnackbar.show();
+
+    }
+
+
 
     public static class Product {
         public final String name;
@@ -45,14 +57,6 @@ public class Cart extends AppCompatActivity {
         public String getName() {
             return name;
         }
-
-        public int getPrice() {
-            return price;
-        }
-
-        public int getAmount() {
-            return amount;
-        }
     }
 
     static ArrayList<Product> ProductList = new ArrayList<>();
@@ -73,6 +77,13 @@ public class Cart extends AppCompatActivity {
         }
     }
 
+
+    public void deleteAll(View view){
+        if (ProductList != null) {
+            ProductList.removeAll(ProductList);
+            this.recreate();
+        }
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -114,13 +125,18 @@ public class Cart extends AppCompatActivity {
         LinearLayout lin = findViewById(R.id.cartlayout);
         lin.removeAllViews();
         if (ProductList != null) {
+            AtomicInteger total = new AtomicInteger();
             ProductList.forEach((product) -> {
                 TextView txtName = new TextView(Cart.this);
                 txtName.setId(ProductList.size());
-                String str = product.name + "   " + product.price + "   " + product.amount;
+                String str = "Product: " + product.name + "                    Price: " + product.price + "$                 Amount: " + product.amount;
                 txtName.setText(str);
                 lin.addView(txtName);
+                total.addAndGet(product.price * product.amount);
+
             });
+            TextView totalPrice = findViewById(R.id.totalPrice);
+            totalPrice.append(total.toString());
         }
     }
 }

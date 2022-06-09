@@ -26,4 +26,7 @@
     <string name="phone2000">Phone2000</string>
     <string name="phone1000">Phone1000</string>
     <string name="phone">Phone</string>
+    <string name="buy_now">Buy now</string>
+    <string name="your_total_price_is">Your total price is:</string>
+    <string name="remove_all_items">Remove all items</string>
 </resources>

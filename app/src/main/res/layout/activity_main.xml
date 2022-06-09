@@ -69,7 +69,7 @@
         android:layout_marginStart="232dp"
         android:layout_marginTop="230dp"
         android:text="@string/buy"
-        android:backgroundTint="@color/popocvet"
+        android:backgroundTint="@color/krasnocvet"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/podimage"/>
 

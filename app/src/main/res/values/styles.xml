@@ -3,7 +3,7 @@
     <style name="openMenu">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">?attr/actionBarSize</item>
-        <item name="android:background">@color/popocvet</item>
+        <item name="android:background">@color/krasnocvet</item>
         <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
     </style>
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/popocvet"
+    android:background="@color/krasnocvet"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,6 +16,16 @@
         android:text="@string/eshop"
         android:textColor="@color/white"
         android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/TitleIcon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="420dp"
+        android:src="@drawable/ic_baseline_add_shopping_cart_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -85,7 +85,7 @@
                     android:layout_marginTop="230dp"
                     android:layout_x="191dp"
                     android:layout_y="405dp"
-                    android:backgroundTint="@color/popocvet"
+                    android:backgroundTint="@color/krasnocvet"
                     android:text="@string/buy"
                     android:onClick="addToCartConsole"/>
             </AbsoluteLayout>
@@ -149,7 +149,7 @@
                     android:layout_marginTop="230dp"
                     android:layout_x="191dp"
                     android:layout_y="405dp"
-                    android:backgroundTint="@color/popocvet"
+                    android:backgroundTint="@color/krasnocvet"
                     android:text="@string/buy"
                     android:onClick="addToCartConsole"/>
             </AbsoluteLayout>
@@ -212,7 +212,7 @@
                     android:layout_marginTop="230dp"
                     android:layout_x="191dp"
                     android:layout_y="405dp"
-                    android:backgroundTint="@color/popocvet"
+                    android:backgroundTint="@color/krasnocvet"
                     android:text="@string/buy"
                     android:onClick="addToCartConsole"/>
             </AbsoluteLayout>
